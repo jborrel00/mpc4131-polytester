@@ -44,7 +44,6 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(6)>0){
   // go through the six channels of the digital pot:
   for (int channel = 0; channel < 6; channel++) { 
     // change the resistance on this channel from min to max:
@@ -65,7 +64,6 @@ digitalWrite(4, HIGH);
 delay(100);
 digitalWrite(4, LOW);
 delay(100);
-}
 }
 
 void digitalPotWrite(int address, int value) {
